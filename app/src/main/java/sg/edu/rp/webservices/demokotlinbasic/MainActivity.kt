@@ -28,6 +28,17 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     output = "Long-lived elderly"
                 }
+
+                /*when (age) {
+                    in 0..17 -> output = "Underage"
+                    in 18..65 -> output = "Young people"
+                    in 66..79 -> output = "Middle-aged"
+                    in 80..99 -> output = "Elderly"
+                    else -> {
+                        output = "Long-lived elderly"
+                    }
+                }*/
+
                 tvShowAge.text = "Your age is $age\n$output"
             } else {
                 Toast.makeText(this, "Please enter your birth year", Toast.LENGTH_SHORT).show()
